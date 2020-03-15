@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- ~ Author Solomon Getnet -->
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<!-- <property name="hibernate.connection.url">jdbc:mysql://my-db-instance.cdhhq2nl0h4o.us-east-1.rds.amazonaws.com:3306/ethtour</property> -->
+		<!-- Database connection settings -->
+		<!-- <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>  zasxdfgp c vbmfds`12  
+			<property name="connection.url">jdbc:oracle:thin:@solxget-PC:1521:XE</property> -->
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ethtour</property>
+		<!-- Test Env -->
+<!-- 		<property name="hibernate.connection.url">jdbc:mysql://my-db-instance.cilary7gkykj.us-east-1.rds.amazonaws.com:3306/ethtour</property>	
+ -->			<!-- Prod -->
+<!-- 		<property name="hibernate.connection.url">jdbc:mysql://mydbinstance.cdhhq2nl0h4o.us-east-1.rds.amazonaws.com:3306/ethtour</property>
+ -->		
+		<property name="connection.username">united</property>
+		<!-- <property name="connection.password">ethiopia2013</property> -->
+		<property name="connection.password">lol</property>
+		<!-- p:password="${dataSource.password}" p:username="${dataSource.username}" 
+		-->
+
+		<!-- <property name="connection.pool_size">1</property> -->
+
+		<property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
+		<!-- <property name="c3p0.acquire_increment">1</property> -->
+		<property name="c3p0.idle_test_period">100</property> <!-- seconds -->
+		<property name="c3p0.max_size">7</property>
+		<property name="c3p0.max_statements">10</property>
+		<property name="c3p0.min_size">3</property>
+		<property name="c3p0.timeout">1800</property> <!-- seconds -->
+		<property name="maxIdle">2</property>
+
+		<!-- SQL dialect -->
+		<!-- <property name="dialect">org.hibernate.dialect.Oracle10gDialect</property> -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- <property name="hibernate.current_session_context_class">thread</property> -->
+
+		<!-- Second-level cache -->
+		<property name="cache.use_second_level_cache">true</property>
+		<property name="cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">false</property>
+
+		<!-- Drop and re-create the database schema on startup create-drop save-update -->
+		<property name="hbm2ddl.auto">update</property>
+
+		<!-- Names the annotated entity class -->
+		<mapping class="org.enduser.service.model.Tourist" />
+		<mapping class="org.enduser.service.model.TouristGroup" />
+		<mapping class="org.enduser.service.model.GroupMember" />
+		<mapping class="org.enduser.service.model.Tour" />
+		<mapping class="org.enduser.service.model.LandingTour" />
+		<mapping class="org.enduser.service.model.TourOperator" />
+		<mapping class="org.enduser.service.model.OperatorTour" />
+		<mapping class="org.enduser.service.model.TourTourOperator_C" />
+		<mapping class="org.enduser.service.model.SimplifyPayment" />
+		<mapping class="org.enduser.service.model.TourTransaction" />
+		<mapping class="org.enduser.service.model.CarTransaction" />
+		<mapping class="org.enduser.service.model.RefundTourist" />
+		<mapping class="org.enduser.service.model.CustomedTour" />
+		<mapping class="org.enduser.service.model.AuthenticationData" />
+		<mapping class="org.enduser.service.model.PasswordReset" />
+		<mapping class="org.enduser.service.model.TourRoute" />
+		<mapping class="org.enduser.service.model.AdminUser" />
+		<mapping class="org.enduser.service.model.Car" />
+		<mapping class="org.enduser.service.model.LandingCar" />
+		<mapping class="org.enduser.service.model.Comment" />
+		<mapping class="org.enduser.service.model.ExchangeRate" />
+		<mapping class="org.enduser.service.model.VisitorInfo" />
+		<mapping class="org.enduser.service.model.VisitorInfo2" />
+		<mapping class="org.enduser.service.model.ChargeStripe" />
+		
+		<mapping class="org.enduser.service.model.TourCatagory" />
+		<mapping class="org.enduser.service.model.TourTypeLookup" />
+
+		<mapping class="org.enduser.service.model.GroupSeasonCast" />
+		<mapping class="org.enduser.service.model.Group1Price" />
+		<mapping class="org.enduser.service.model.Group2Price" />
+		<mapping class="org.enduser.service.model.Group3Price" />
+		<mapping class="org.enduser.service.model.Group4Price" />
+		<mapping class="org.enduser.service.model.Group5Price" />
+
+
+	</session-factory>
+
+</hibernate-configuration>

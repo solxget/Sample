@@ -1,0 +1,78 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "jquery/jquery.d.ts": {
+      "commit": "73f7bb99692823f1811817f9753a02b57af5305e"
+    },
+    "react/react.d.ts": {
+      "commit": "73f7bb99692823f1811817f9753a02b57af5305e"
+    },
+    "react/react-global.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "react/react-dom.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "react/react-addons-create-fragment.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "react/react-addons-css-transition-group.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "react/react-addons-transition-group.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "react/react-addons-linked-state-mixin.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "react/react-addons-perf.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "react/react-addons-pure-render-mixin.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "react/react-addons-test-utils.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "react/react-addons-update.d.ts": {
+      "commit": "08ed4e9f1869e37e29514d862e0158b40e550232"
+    },
+    "bootstrap/bootstrap.d.ts": {
+      "commit": "73f7bb99692823f1811817f9753a02b57af5305e"
+    },
+    "i18next/i18next.d.ts": {
+      "commit": "73f7bb99692823f1811817f9753a02b57af53054"
+    },
+    "react-router/history.d.ts": {
+      "commit": "73f7bb99692823f1811817f9753a02b57af53050"
+    },
+    "react-router/react-router.d.ts": {
+      "commit": "73f7bb99692823f1811817f9753a02b57af53051"
+    },
+    "nanoflux/NanoFlux.d.ts": {
+      "commit": "73f7bb99692823f1811817f9753a02b57af53052"
+    },
+    "moment/moment-node.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "moment/moment.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "pikaday/pikaday.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "whatwg-fetch/whatwg-fetch.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "es6-promise/es6-promise.d.ts": {
+      "commit": "edb64e4a35896510ce02b93c0bca5ec3878db738"
+    },
+    "switchery/switchery.d.ts": {
+      "commit": "fdb64e4a35896510ce02b93c0bca5ec3878db738"
+    }
+  }
+}

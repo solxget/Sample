@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.unitedethiopia.endusers</groupId>
+		<artifactId>enduser</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>enduser-ear</artifactId>
+	<packaging>ear</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.unitedethiopia.endusers</groupId>
+			<artifactId>enduser-service</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.unitedethiopia.endusers</groupId>
+			<artifactId>enduser-ui</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+		</dependency>		
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>appXML</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>generate-application-xml</goal>
+						</goals>
+						<configuration>
+							<!-- <displayName>End User</displayName> <description>End User</description> 
+								<version>1</version> <filtering>true</filtering> <earSourceExcludes>**/application.xml</earSourceExcludes> -->
+							<applicationName>${project.artifactId}</applicationName>
+							<modules>
+								<webModule>
+									<groupId>com.unitedethiopia.endusers</groupId>
+									<artifactId>enduser-ui</artifactId>
+									<contextRoot>/</contextRoot> 
+								</webModule>
+								<webModule>
+									<groupId>com.unitedethiopia.endusers</groupId>
+									<artifactId>enduser-service</artifactId>
+									<contextRoot>/enduser/service</contextRoot>
+								</webModule>
+							</modules>
+						</configuration>
+					</execution>
+					<execution>
+						<id>buildEAR</id>
+						<phase>package</phase>
+						<goals>
+							<goal>ear</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

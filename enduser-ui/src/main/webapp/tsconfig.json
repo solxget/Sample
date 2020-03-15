@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": false,
+        "module": "commonjs",
+        "jsx": "react"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+    /*"files": [
+        "app.tsx",        
+        "./components/Pages/NavBar.tsx",
+        "typings/tsd.d.ts"
+    ]*/
+}

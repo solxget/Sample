@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="6da0e587-71c8-41c9-9bd5-b1c00ff0fb7a" activeEnvironment="Default environment" name="CarService" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" encryptionMode="Not encrypted" updated="2.5.0 2018-11-09T13:45:17Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="2bafb928-5a3e-4279-ae34-8d24015c88be" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:7001" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:7001</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Service" path="/enduser/service/car/get" id="c345deec-e9c4-4d65-a675-db6ee9712d5c">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>pickUpAddress</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>pickUpDate</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>returnAddress</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>returnDate</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>rentalDuration</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>country</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>pickUpTime</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>dropOffTime</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Service" id="3d81b224-2f0a-4788-a272-2812e100d5d2" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>550 450</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>404 500</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="getCar" id="be1c5878-b503-4817-910c-de47bcdc331b" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://www.touranb.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://localhost/enduser/service/car/get</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <con:entry key="pickUpTime" value="7:00AMT00:00:00"/>
+            <con:entry key="dropOffTime" value="7:00AMT00:00:00"/>
+            <con:entry key="pickUpAddress" value="Nairobi"/>
+            <con:entry key="rentalDuration" value="7"/>
+            <con:entry key="returnDate" value="2017-06-20T00:00:00"/>
+            <con:entry key="country" value="Kenya"/>
+            <con:entry key="pickUpDate" value="2017-06-13T00:00:00T00:00:00"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>pickUpAddress</con:entry>
+            <con:entry>pickUpDate</con:entry>
+            <con:entry>returnAddress</con:entry>
+            <con:entry>returnDate</con:entry>
+            <con:entry>rentalDuration</con:entry>
+            <con:entry>country</con:entry>
+            <con:entry>pickUpTime</con:entry>
+            <con:entry>dropOffTime</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="7297e29d-9bba-45ec-9d1a-df92138df1a2" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:7001" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:7001</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Service" path="/enduser/service/car/register" id="e128ecdf-ac25-48fd-8088-343b96174eb4">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>car</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Service" id="d50bac7f-555d-402f-a929-56aaaab10e01" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>405 401 400 404</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>450 550</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:reg="http://localhost/enduser/service/car/register">reg:Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="registerCar" id="afb66c9a-f179-4186-90cb-143af2c76fe1" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer 7kiic058hbgvmnurj0l0b4lv4q sgayalew@mtu.edu" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:7001</con:endpoint>
+          <con:request>{
+	   "carId" : "Cid_21",
+        "operatorId" : "101",
+        "operatorName" : "Mistubishi",
+        "carType" : "Cadilac ",
+        "carModel" : "4 runner",
+        "passangerSize" : "5",
+        "doorCount" : "4",
+        "withDriver" : "Yes",
+        "dailyPrice" : "25.56",        
+        "returnAddress" : "pickup address",
+        "automaticTransmission" : true,
+        "carCount" : "2",
+        "houseNumber" : "+251912111668",
+        "buildingName" : "Doumble",
+        "kebela" : "13",
+        "county" : "Gulala",
+        "subCity" : "Arada",
+        "city" : "AA",        
+        "return_houseNumber" : "770",
+        "return_buildingName" : "Return Doumble",
+        "return_kebela" : "Return13",
+        "return_county" : "Return Gulala",
+        "return_subCity" : "Return Arada",
+        "return_city" : "Return AA"
+}</con:request>
+          <con:originalUri>http://localhost/enduser/service/car/register</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:parameterOrder>
+            <con:entry>car</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="9ecffeb2-6b9a-469c-88b1-7b4674e80c72" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:7001" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:7001</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Service" path="/enduser/service/car/update" id="3e3aa140-bf42-43e1-b797-7b0cb30c25e1">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>key</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>value</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>carId</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Service" id="aeb6b441-6e8b-44a7-94a4-e3f20cc91ad3" method="PUT">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>550 450</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:upd="http://localhost/enduser/service/car/update">upd:Response</con:element>
+        </con:representation>
+        <con:request name="updateCar" id="0eed8930-6b04-4ab5-bb2d-77075cb4294d" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer s6t4t9mnlr4dsr74jqhq15rr7h Adik225" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:7001</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://localhost/enduser/service/car/update</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <con:entry key="carId" value="Cid2"/>
+            <con:entry key="value" value="Nissave"/>
+            <con:entry key="key" value="car_type"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>key</con:entry>
+            <con:entry>value</con:entry>
+            <con:entry>carId</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="df19a493-c01e-4a96-b7c9-1db2b6a0607c" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:7001" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:7001</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Service" path="/enduser/service/car/delete" id="9ecee2f2-d227-45b5-8ae5-c8e524412555">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>carId</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Service" id="437404ed-74b2-4687-af1e-bff3082b9348" method="DELETE">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>550</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="deleteCar" id="9f3e83d6-b922-4682-88a7-6269727a196a" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer s6t4t9mnlr4dsr74jqhq15rr7h Adik225" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:7001</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://localhost/enduser/service/car/delete</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="carId" value="Cid2" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>carId</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="4853570b-3285-4515-9678-548247793545" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:7001" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:7001</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Service" path="/enduser/service/car/bookcar" id="e47e845c-f00d-44da-88c4-0ff8f9907fdb">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>tourTransaction</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Service" id="a57d9145-e743-408a-956b-9ccc27a8e0a5" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>550</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:book="http://localhost/enduser/service/car/bookcar">book:Response</con:element>
+        </con:representation>
+        <con:request name="bookCar" id="a7676c99-c819-4fd1-bda6-bc55d678bb19" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:7001</con:endpoint>
+          <con:request>{
+      "emailAddress" : "silja@uom.edu",
+      "tourId" : "Car23",
+      "operatorId" : "12",
+      "paymentAmount" : "500",
+      "currency" : "EUR",
+      "description" : "Car Rental",
+      "paymentDate" : "",
+      "suppliedEmailAddress" : "silja@uom.edu",
+      "firstName" : "Silja",
+      "lastName" : "Furche",
+      "phoneNumber" : "+1734568273",
+      "paymentId" : "fuck me",
+      "confirmationNumber" : "",
+      "refundFlag" : "0",
+      "refundDate" : "",
+      "token" : "23rfsddfwerrt43cew"
+}</con:request>
+          <con:originalUri>http://localhost/enduser/service/car/bookcar</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:parameterOrder>
+            <con:entry>tourTransaction</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="b8ce978f-c800-467e-8b79-df6a6f75a6f7" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:7001" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:7001</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Service" path="/enduser/service/car/operatorid" id="94e6d453-111c-4b95-9f5f-c8cd0cb7b44a">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>operatorId</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Service" id="fb8694c6-af8a-4096-b529-495e990a59fc" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>450</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="getCarByOperatorId" id="7960071e-be7b-46c4-80bd-b07a6c80cbf8" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:7001</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://localhost/enduser/service/car/operatorid</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="operatorId" value="101" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>operatorId</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="fd967949-8a7b-4f22-953e-5cc723b8245a" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:7001" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:7001</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Service" path="/enduser/service/car/carid" id="639b7a5c-7f8a-487e-9c57-3b5c85245704">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>operatorId</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Service" id="44db2311-0ef8-4b43-bf26-a61e007bbbda" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>404 401</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/plain</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="getCarId" id="d795c9b5-82d0-4492-a7de-0ba27ae27f67" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer 7kiic058hbgvmnurj0l0b4lv4q 102" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:7001</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://localhost/enduser/service/car/carid</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="operator_id" value="102" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>operatorId</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="b54a33ba-55e4-47f1-9069-302a14322626" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:7001" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:7001</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Service" path="/enduser/service/car/mycars" id="973e9156-ad9b-4fd3-8340-5151c9852034">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Service" id="19563300-4d37-4c97-818c-1f9b8ad6bbf3" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>450</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>401</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:request name="getMyCars" id="4a3a9bfc-1d8b-4aaf-9526-90aefff88757" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer 599lqj12k46sepu7ffvrcu89ds 101" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:7001</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://localhost/enduser/service/car/mycars</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="0ac4de8f-f2df-4dea-b666-e1c82de54326" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:7001" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:7001</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Enduser" path="/enduser/service/car/save" id="40a57b8e-6107-4dee-a3f7-a800a3e1301d">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>landingCar</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Enduser" id="582ae1e5-99f9-4aa9-b13f-bdb04fb53ead" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:save="http://localhost/enduser/car/save">save:Response</con:element>
+        </con:representation>
+        <con:request name="saveCar" id="9be01785-1555-4fab-bb2b-3f1c39ffbbde" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer 599lqj12k46sepu7ffvrcu89ds 101" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:7001</con:endpoint>
+          <con:request>{
+	   "carId" : "Cid_1",
+        "operatorId" : "101",
+        "operatorName" : "Mistubishi",
+        "carType" : "Cadilac ",
+        "carModel" : "4 runner",
+        "passangerSize" : "5",
+        "doorCount" : "4",
+        "withDriver" : "Yes",
+        "dailyPrice" : "25.56",        
+        "returnAddress" : "pickup address",
+        "automaticTransmission" : true,
+        "carCount" : "2",
+        "houseNumber" : "+251912111668",
+        "buildingName" : "Doumble",
+        "kebela" : "13",
+        "county" : "Gulala",
+        "subCity" : "Arada",
+        "city" : "AA",        
+        "return_houseNumber" : "770",
+        "return_buildingName" : "Return Doumble",
+        "return_kebela" : "Return13",
+        "return_county" : "Return Gulala",
+        "return_subCity" : "Return Arada",
+        "return_city" : "Return AA"
+}</con:request>
+          <con:originalUri>http://localhost/enduser/car/save</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters/>
+          <con:parameterOrder>
+            <con:entry>landingCar</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:interface xsi:type="con:RestService" id="dd0bd125-bbf5-4f29-8712-4e4a760b2510" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:7001" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://localhost:7001</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Enduser" path="/enduser/service/car/remove" id="f37d478f-28a3-44ee-ad7c-024e380e429d">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>carId</con:name>
+          <con:value/>
+          <con:style>QUERY</con:style>
+          <con:default/>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Enduser" id="874f3baa-9489-49b4-8673-ec1f2df33a1b" method="DELETE">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>583</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="deleteMyCar" id="16b5b0d2-de05-45d3-a23b-6f2ccc430bc3" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authorization" value="Bearer 599lqj12k46sepu7ffvrcu89ds 101" xmlns="http://eviware.com/soapui/config"/></con:setting>
+          </con:settings>
+          <con:endpoint>http://localhost:7001</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://localhost/enduser/service/car/remove</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:jmsPropertyConfig/>
+          <con:parameters>
+            <entry key="carId" value="Cid_1" xmlns="http://eviware.com/soapui/config"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>carId</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
