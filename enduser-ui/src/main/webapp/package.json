@@ -14,7 +14,7 @@
     "es6-promise": "^3.2.1",
     "font-awesome": "^4.6.1",
     "googleapis": "^19.0.0",
-    "i18next": "^2.5.1",
+    "i18next": "^19.3.2",
     "jquery": "^2.2.3",
     "jquery-validation": "^1.16.0",
     "lightslider": "^1.1.5",
