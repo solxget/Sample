@@ -15,7 +15,7 @@
     "font-awesome": "^4.6.1",
     "googleapis": "^19.0.0",
     "i18next": "^2.5.1",
-    "jquery": "^2.2.3",
+    "jquery": "^3.5.0",
     "jquery-validation": "^1.16.0",
     "lightslider": "^1.1.5",
     "moment": "^2.13.0",
